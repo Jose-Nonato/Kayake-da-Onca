@@ -38,7 +38,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img width=250 height=200 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnX61vpvWgTRKTKpjWaTfXTaBlRlwDS2o1w&usqp=CAU"><br/><br/><a href="https://github.com/carloseduardonylander">Carlos Eduardo</a>
+      <img width=250 height=200 src="https://github.com/Jose-Nonato/Kayake-da-Onca/blob/main/app/src/assets/Carlos.png"><br/><br/><a href="https://github.com/carloseduardonylander">Carlos Eduardo</a>
     </td>
     <td align="center">
       <img width=250 height=200 src="https://rollingstone.uol.com.br/media/uploads/orlando_bloom_legolas_senhor_dos_aneis_cimema_filme.jpg"><br/><br/><a href="https://github.com/Jose-Nonato">José Nonato</a>
