@@ -29,11 +29,10 @@
 <table align="center">
   <tr>
     <td align="center">
-      <img width=250 height=200 src="https://s2.glbimg.com/BIOVnKYA4exzDFd5WOzjhBfGFXk=/top/e.glbimg.com/og/ed/f/original/2020/03/05/s2.jpg"><br/><br/><a href="https://github.com/edumaedaa">Eduardo Maeda</a>
+      <img width=250 height=200 src="https://github.com/Jose-Nonato/Kayake-da-Onca/blob/main/app/src/assets/Eduardo.png"><br/><br/><a href="https://github.com/edumaedaa">Eduardo Maeda</a>
     </td>
     <td align="center">
-      <img width=250 height=200 src="![image](https://user-images.githubusercontent.com/66874248/166224393-24da3a6e-91f0-4ed8-843b-c996933b0e0b.png)
-"><br/><br/><a href="https://github.com/AbimaelOliveira">Abimael Oliveira</a>
+      <img width=250 height=200 src="https://github.com/Jose-Nonato/Kayake-da-Onca/blob/main/app/src/assets/Abimael.png"><br/><br/><a href="https://github.com/AbimaelOliveira">Abimael Oliveira</a>
     </td>
   </tr>
   <tr>
@@ -41,7 +40,7 @@
       <img width=250 height=200 src="https://github.com/Jose-Nonato/Kayake-da-Onca/blob/main/app/src/assets/Carlos.png"><br/><br/><a href="https://github.com/carloseduardonylander">Carlos Eduardo</a>
     </td>
     <td align="center">
-      <img width=250 height=200 src="https://rollingstone.uol.com.br/media/uploads/orlando_bloom_legolas_senhor_dos_aneis_cimema_filme.jpg"><br/><br/><a href="https://github.com/Jose-Nonato">José Nonato</a>
+      <img width=250 height=200 src="https://github.com/Jose-Nonato/Kayake-da-Onca/blob/main/app/src/assets/Jos%C3%A9.png"><br/><br/><a href="https://github.com/Jose-Nonato">José Nonato</a>
     </td>
   </tr>
 </table>
