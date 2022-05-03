@@ -14,7 +14,6 @@ function Header() {
                     <li><a>Início</a></li>
                     <li><a href="#how">Como Funciona</a></li>
                     <li><a>Quem Somos</a></li>
-                    <li><a>Fale Conosco</a></li>
                 </ul>
                 <ul className="nav__item__2">
                     <li><a>Cadastrar</a></li>

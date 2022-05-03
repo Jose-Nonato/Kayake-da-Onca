@@ -10,7 +10,7 @@ export const Container = styled.div`
             flex-direction: row;
             width: 70%;
             margin: 0 auto;
-            padding: 50px;
+            padding: 50px 0px 100px 0px;
 
             .text {
                 h1 {
@@ -83,7 +83,7 @@ export const Container = styled.div`
         .who {
             width: 70%;
             margin: 0 auto;
-            padding: 40px 0px;
+            padding: 50px 0px 100px 0px;
 
             h1 {
                 text-align: center;
@@ -99,6 +99,7 @@ export const Container = styled.div`
                 img {
                     width: 500px;
                     height: 400px;
+                    box-shadow: 0px 10px 18px -7px rgba(0,0,0,0.75);
                 }
             }
 

@@ -8,6 +8,7 @@ import boat from '../../assets/boat.png';
 
 import { Container } from './styles.js';
 import Header from '../../components/header/header.js';
+import Footer from '../../components/footer/footer.js';
 
 function About() {
     return(
@@ -87,6 +88,7 @@ tae nulla. Etiam vitae blandit turpis. Praesent eget purus ac nibh aliquam ultri
                     </div>
                 </section>
             </main>
+            <Footer/>
         </Container>
     );
 }
