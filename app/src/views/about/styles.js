@@ -23,8 +23,10 @@ export const Container = styled.div`
             }
 
             .img {
-                box-shadow: 0px 10px 18px -7px rgba(0,0,0,0.75);
                 margin-left: 5rem;
+                img {
+                    box-shadow: 0px 10px 18px -7px rgba(0,0,0,0.75);
+                }
             }
         }
 
