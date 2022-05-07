@@ -1,25 +1,19 @@
 import React from "react";
 import logo from '../../assets/logo.png'
+
 import { Container } from './styles.js';
 
 function Header() {
     return(
         <Container>
             <div className="logo">
-                <a><img src={logo}></img></a>
+                <img src={logo} alt="logo"/>
             </div>
-
-            <div className="menu">
-                <ul className="nav__item__1">
-                    <li><a>Início</a></li>
-                    <li><a href="#how">Como Funciona</a></li>
-                    <li><a>Quem Somos</a></li>
-                </ul>
-                <ul className="nav__item__2">
-                    <li><a>Cadastrar</a></li>
-              
-                    <li><a>Entrar</a></li>
-                </ul>
+            <div className="links">
+                <a href="/dashboard">Inicio</a>
+                <a href="/schedule">Agenda</a>
+                <a href="/">Histórico</a>
+                <a href="/">Sair</a>
             </div>
         </Container>
     );

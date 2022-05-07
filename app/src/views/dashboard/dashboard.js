@@ -2,6 +2,7 @@ import React from "react";
 
 import Carousel from '../../components/carousel/carousel.js';
 import Footer from '../../components/footer/footer.js';
+import Header from "../../components/header/header.js";
 
 import {Container} from './styles.js';
 
@@ -12,6 +13,7 @@ import trail from '../../assets/trail.png';
 function Dashboard () {
     return(
         <Container>
+            <Header/>
             <Carousel/>
             <main>
                 <div className="one">

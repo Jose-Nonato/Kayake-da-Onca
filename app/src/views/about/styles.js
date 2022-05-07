@@ -4,6 +4,45 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 20px 100px;
+        background: rgba(0, 153, 255, 0.52);
+        box-shadow: -5px 7px 10px -7px rgba(0,0,0,0.75);
+
+        .logo {
+            img {
+                width: 90px;
+                height: 90px;
+            }
+        }
+
+        .links {
+            a {
+                text-decoration: none;
+                color: black;
+                margin-left: 15px;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover {
+                    color: white;
+                }
+            }
+            Button {
+                color: black;
+                margin-left: 15px;
+                transition: .3s ease-in-out;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+
     main {
         .start {
             display: flex;
@@ -114,4 +153,34 @@ export const Container = styled.div`
         }
     }
 
+`;
+
+export const Card = styled.div`
+    background-color: #fff;
+    width: 50%;
+    padding: 15px;
+    box-shadow: -5px 7px 10px -7px rgba(0,0,0,0.75);
+
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    h1 {
+        padding: 10px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+    }
+
+    .input {
+        width: 70%;
+        margin: 10px;
+    }
+
+    Button {
+        width: 30%;
+    }
 `;

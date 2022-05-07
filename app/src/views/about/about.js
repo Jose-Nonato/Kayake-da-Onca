@@ -1,21 +1,147 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import imgBoat from '../../assets/imgBoat.png';
 import howOne from '../../assets/howOne.png';
 import howTwo from '../../assets/howTwo.png';
 import howThree from '../../assets/howThree.png';
 import boat from '../../assets/boat.png';
+import Logo from '../../assets/logo.png';
 
-import { Container } from './styles.js';
-import Header from '../../components/header/header.js';
+import { Container, Card } from './styles.js';
 import Footer from '../../components/footer/footer.js';
 
+import Button from '@material-ui/core/Button';
+import Modal from '@material-ui/core/Modal';
+import TextField from '@material-ui/core/TextField';
+import Grid from '@material-ui/core/Grid';
+
+import Fab from '@material-ui/core/Fab';
+import { FaFacebookF, FaGoogle } from 'react-icons/fa';
+
 function About() {
+
+    const [openCad, setOpenCad] = useState(false);
+    const handleOpenCad = () => setOpenCad(true);
+    const handleCloseCad = () => setOpenCad(false);
+
+    const [openIn, setOpenIn] = useState(false);
+    const handleOpenIn = () => setOpenIn(true);
+    const handleCloseIn = () => setOpenIn(false);
+
     return(
         <Container>
-            <Header/>
+            
+            <Modal
+            open={openIn}
+            onClose={handleCloseIn}
+            >
+                <Card>
+                    <Grid
+                        container
+                        direction="column"
+                        justify="center"
+                        alignItems="center"
+                    >
+                        <h1>Bem-vindo de volta !</h1>
+                        <Grid
+                            container
+                            direction="row"
+                            justify="center"
+                            alignItems="center"
+                        >
+                            <Fab size="small" color="primary" aria-label="Add" className='icon'>
+                                <FaFacebookF/>
+                            </Fab>
+                            <Fab size="small" color="secondary" aria-label="Add" className='icon'>
+                                <FaGoogle/>
+                            </Fab>
+                        </Grid>
+                        <TextField
+                            id="outlined-email-input"
+                            label="Email"
+                            type="email"
+                            name="email"
+                            autoComplete="email"
+                            variant="outlined"
+                            className='input'
+                        />
+                        <TextField
+                            id="outlined-name-input"
+                            label="Senha"
+                            type="password"
+                            name="password"
+                            variant="outlined"
+                            className='input'
+                        />
+                        <Button variant="contained" color="primary">Entrar</Button>
+                    </Grid>
+                </Card>
+            </Modal>
+
+            <Modal
+            open={openCad}
+            onClose={handleCloseCad}
+            >
+                <Card>
+                    <Grid
+                        container
+                        direction="column"
+                        justify="center"
+                        alignItems="center"
+                    >
+                        <h1>É um prazer tê-lo aqui !</h1>
+                        <TextField
+                            id="outlined-name-input"
+                            label="Nome"
+                            type="name"
+                            name="name"
+                            variant="outlined"
+                            className='input'
+                        />
+                        <TextField
+                            id="outlined-email-input"
+                            label="Email"
+                            type="email"
+                            name="email"
+                            autoComplete="email"
+                            variant="outlined"
+                            className='input'
+                        />
+                        <TextField
+                            id="outlined-email-input"
+                            label="Senha"
+                            type="password"
+                            name="password"
+                            variant="outlined"
+                            className='input'
+                        />
+                        <TextField
+                            id="outlined-email-input"
+                            label="Confirme sua Senha"
+                            type="password"
+                            name="password"
+                            variant="outlined"
+                            className='input'
+                        />
+                        <Button variant="contained" color="primary">Cadastrar</Button>
+                    </Grid>
+                </Card>
+            </Modal>
+
+            <header>
+                <div className='logo'>
+                    <img src={Logo} alt='logo'/>
+                </div>
+                <div className='links'>
+                    <a href='#start'>Sobre nós</a>
+                    <a href='#how'>Como funciona</a>
+                    <a href='#who'>Quem somos</a>
+                    <Button onClick={handleOpenCad} color="primary">Cadastrar</Button>
+                    <Button onClick={handleOpenIn} color="primary">Entrar</Button>
+                </div>
+            </header>
             <main>
-                <section className='start'>
+                <section className='start' id='start'>
                     <div className='text'>
                         <h1>Por que praticar remo ?</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nibh est, faucibus sollicitudin tortor a, fringilla 
@@ -60,7 +186,7 @@ tae nulla. Etiam vitae blandit turpis. Praesent eget purus ac nibh aliquam ultri
                         </div>
                     </div>
                 </section>
-                <section className='who'>
+                <section className='who' id='who'>
                     <h1>Quem somos ?</h1>
                     <div className='container'>
                         <div className='modal'>
