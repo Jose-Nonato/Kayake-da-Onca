@@ -23,6 +23,7 @@ export const Container = styled.div`
             text-decoration: none;
             color: black;
             margin-left: 20px;
+            padding: 8px 16px;
             transition: .3s ease-in-out;
             &:hover {
                 color: #fff;
