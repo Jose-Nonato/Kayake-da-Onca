@@ -31,7 +31,7 @@ function Schedule() {
                         <div className="card__how__go">
 
                             <div className='imgBx'>
-                                <img src={KayaqueAtividade}></img>
+                                <img src={KayaqueAtividade} alt="Kayake"/>
                             </div>
                             
                             <div className='infoBtn'>   
@@ -55,7 +55,7 @@ function Schedule() {
                         <div className="card__how__go">
 
                             <div className='imgBx'>
-                                <img src={BarcoAtividade}></img>
+                                <img src={BarcoAtividade} alt="barco"/>
                             </div>
                             
                             <div className='infoBtn'>   
@@ -83,7 +83,7 @@ function Schedule() {
 
                         <div className="card__activities">
                             <div className="title__activities">
-                                <img src={YogaEco}/>
+                                <img src={YogaEco} alt="Yoga"/>
 
                                 <h1>Yoga Ecológico</h1>
                             </div>
@@ -104,7 +104,7 @@ function Schedule() {
 
                         <div className="card__activities">
                             <div className="title__activities">
-                                <img src={trilha}/>
+                                <img src={trilha} alt="Trilha"/>
 
                                 <h1>Trilha Ecológica</h1>
                             </div>
@@ -125,7 +125,7 @@ function Schedule() {
                         
                         <div className="card__activities">
                             <div className="title__activities">
-                                <img src={natacao}/>
+                                <img src={natacao} alt="natacao"/>
 
                                 <h1>Natação</h1>
                             </div>

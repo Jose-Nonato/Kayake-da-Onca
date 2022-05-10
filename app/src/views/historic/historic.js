@@ -8,7 +8,7 @@ function Historic(){
     return(
         <Container>
             <div className="boxOverall">
-                <img src={boatBackground}></img>
+                <img src={boatBackground} alt="Barco"/>
                 <section>
                     <div className="box">
                         <div className="historic__menu">
