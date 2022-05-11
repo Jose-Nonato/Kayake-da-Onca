@@ -75,6 +75,24 @@ export const Container = styled.div`
             padding: 4px 8px;
 
         }
+
+        .recent__buy {
+            table {
+                border: none;
+
+                th {
+                    border: none;
+                    text-align: center;
+                    padding: 10px;
+                }
+
+                td {
+                    border: none;
+                    text-align: center;
+                    padding: 10px;
+                }
+            }
+        }
         
     }
 

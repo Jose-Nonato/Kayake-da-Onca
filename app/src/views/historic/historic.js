@@ -12,9 +12,9 @@ function Historic(){
                 <section>
                     <div className="box">
                         <div className="historic__menu">
-                            <FaArrowAltCircleLeft className="iconHome" size={'30px'}/>
+                            <a href="/schedule"><FaArrowAltCircleLeft className="iconHome" size={'30px'}/></a>
                             <h1>Histórico de compras</h1>
-                            <FaHome className="iconHome" size={'30px'}/>
+                            <a href="/dashboard"><FaHome className="iconHome" size={'30px'}/></a>
                         </div>
                         
 
