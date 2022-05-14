@@ -10,6 +10,8 @@ import Logo from '../../assets/logo.png';
 import { Container, Card } from './styles.js';
 import Footer from '../../components/footer/footer.js';
 
+import { clientService } from '../../services/client-serice';
+
 import Button from '@material-ui/core/Button';
 import Modal from '@material-ui/core/Modal';
 import TextField from '@material-ui/core/TextField';
@@ -23,6 +25,48 @@ function About() {
     const [openCad, setOpenCad] = useState(false);
     const handleOpenCad = () => setOpenCad(true);
     const handleCloseCad = () => setOpenCad(false);
+
+    let jsonData = clientService.listaClientes()
+
+
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("") 
+    const [password, setPassword] = useState("")
+    const [confirmedPassword, setConfirmedPassword] = useState("")
+
+    function handlePassword(e){
+        console.log(e.target.value)
+        setPassword(e.target.value) 
+    }
+    function handleEmail(e){
+        console.log(e.target.value)
+        setEmail(e.target.value) 
+    }
+    function handleName(e){
+        console.log(e.target.value)
+        setName(e.target.value) 
+    }
+    function handleConfirmedPassword(e){
+        console.log(e.target.value)
+        setConfirmedPassword(e.target.value) 
+    }
+
+    function onRegister(){
+        if(confirmedPassword == password){
+            clientService.criaCliente(name,password,email)
+            
+        }
+    }
+
+    function onLogin(){
+        jsonData.then(response=>{
+            response.forEach(element => {
+                if(element.senha == password && element.email){
+                    window.location.href = "http://localhost:3000/dashboard"
+                }
+            })
+        })
+    }
 
     const [openIn, setOpenIn] = useState(false);
     const handleOpenIn = () => setOpenIn(true);
@@ -63,6 +107,7 @@ function About() {
                             name="email"
                             autoComplete="email"
                             variant="outlined"
+                            onChange={handleEmail}
                             className='input'
                         />
                         <TextField
@@ -71,9 +116,10 @@ function About() {
                             type="password"
                             name="password"
                             variant="outlined"
+                            onChange={handlePassword}
                             className='input'
                         />
-                        <Button variant="contained" color="primary">Entrar</Button>
+                        <Button variant="contained" onClick={onLogin} color="primary">Entrar</Button>
                     </Grid>
                 </Card>
             </Modal>
@@ -96,6 +142,7 @@ function About() {
                             type="name"
                             name="name"
                             variant="outlined"
+                            onChange={handleName}
                             className='input'
                         />
                         <TextField
@@ -105,6 +152,7 @@ function About() {
                             name="email"
                             autoComplete="email"
                             variant="outlined"
+                            onChange={handleEmail}
                             className='input'
                         />
                         <TextField
@@ -113,6 +161,7 @@ function About() {
                             type="password"
                             name="password"
                             variant="outlined"
+                            onChange={handlePassword}
                             className='input'
                         />
                         <TextField
@@ -121,13 +170,13 @@ function About() {
                             type="password"
                             name="password"
                             variant="outlined"
+                            onChange={handleConfirmedPassword}
                             className='input'
                         />
-                        <Button variant="contained" color="primary">Cadastrar</Button>
+                        <Button variant="contained" onClick={onRegister} color="primary">Cadastrar</Button>
                     </Grid>
                 </Card>
             </Modal>
-
             <header>
                 <div className='logo'>
                     <img src={Logo} alt='logo'/>

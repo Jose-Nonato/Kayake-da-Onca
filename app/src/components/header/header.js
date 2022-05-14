@@ -12,7 +12,7 @@ function Header() {
             <div className="links">
                 <a href="/dashboard">Inicio</a>
                 <a href="/schedule">Agenda</a>
-                <a href="/">Histórico</a>
+                <a href="/historic">Histórico</a>
                 <a href="/">Sair</a>
             </div>
         </Container>

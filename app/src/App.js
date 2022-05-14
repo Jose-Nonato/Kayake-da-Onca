@@ -9,14 +9,15 @@ import './global.css';
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path='/' element={<About/>}/>
-    //     <Route path='/dashboard' element={<Dashboard/>}/>
-    //     <Route path='/schedule' element={<Schedule/>}/>
-    //   </Routes>
-    // </BrowserRouter>
-    <Historic/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<About/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/schedule' element={<Schedule/>}/>
+        <Route path='/historic' element={<Historic/>}/>
+      </Routes>
+    </BrowserRouter>
+   
   );
 }
 

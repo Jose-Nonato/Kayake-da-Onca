@@ -1,7 +1,8 @@
 import React from "react";
 
-import KayaqueAtividade from './assets/Kayke.png'
-import BarcoAtividade from './assets/barco.png'
+import barco from './assets/barco.png'
+import kayake from './assets/Kayke.png'
+
 
 import YogaEco from './assets/yoga.png'
 import natacao from './assets/natacao.png'
@@ -9,6 +10,8 @@ import trilha from './assets/trilha.png'
 
 
 import { Container } from './styles'
+
+import CardHowGo from "../../components/cardHowGo/cardHowGo";
 import Header from '../../components/header/header.js';
 import Footer from "../../components/footer/footer";
 
@@ -23,59 +26,17 @@ function Schedule() {
                         <div className="chooseAct">
                             <p>Escolha suas atividades abaixo</p>
                         </div>
+
+                        <div className="shopCart">
+                            <div className="shopCard__title"></div>
+                        </div>
                     </div>
 
                     <h1 className="title">Como Ir?</h1>   
-                    <div className="how__go">
-
-                        <div className="card__how__go">
-
-                            <div className='imgBx'>
-                                <img src={KayaqueAtividade}></img>
-                            </div>
-                            
-                            <div className='infoBtn'>   
-                                <span>
-                                    i
-                                </span>
-                            </div>
-                            <div className='content'>
-                                <div className='infoText'>
-                                    <h3>Kayake</h3>
-                                    <p>
-                                        Donec commodo, lacus ut rutrum aliquam, 
-                                        nibh elit rutrum risus, finibus venenatis tellus 
-                                        sapien at quam. Donec rhoncus turpis massa, 
-                                        quis pellentesque turpis vestibulum in. 
-                                    </p>
-                                </div>
-                            </div>
+                        <div className="how__go">   
+                            <CardHowGo imgCard={barco} alternativeText="Imagem de Barco"/>
+                            <CardHowGo imgCard={kayake} alternativeText="Imagem de Kayake"/>
                         </div>
-
-                        <div className="card__how__go">
-
-                            <div className='imgBx'>
-                                <img src={BarcoAtividade}></img>
-                            </div>
-                            
-                            <div className='infoBtn'>   
-                                <span>
-                                i
-                                </span>
-                            </div>
-                            <div className='content'>
-                                <div className='infoText'>
-                                    <h3>Kayake</h3>
-                                    <p>
-                                        Donec commodo, lacus ut rutrum aliquam, 
-                                        nibh elit rutrum risus, finibus venenatis tellus 
-                                        sapien at quam. Donec rhoncus turpis massa, 
-                                        quis pellentesque turpis vestibulum in. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     
                     <h1 className="title">Atividades</h1>   
 
@@ -83,7 +44,7 @@ function Schedule() {
 
                         <div className="card__activities">
                             <div className="title__activities">
-                                <img src={YogaEco}/>
+                                <img src={YogaEco} alt="Yoga"/>
 
                                 <h1>Yoga Ecológico</h1>
                             </div>
@@ -104,7 +65,7 @@ function Schedule() {
 
                         <div className="card__activities">
                             <div className="title__activities">
-                                <img src={trilha}/>
+                                <img src={trilha} alt="Trilha"/>
 
                                 <h1>Trilha Ecológica</h1>
                             </div>
@@ -125,7 +86,7 @@ function Schedule() {
                         
                         <div className="card__activities">
                             <div className="title__activities">
-                                <img src={natacao}/>
+                                <img src={natacao} alt="natacao"/>
 
                                 <h1>Natação</h1>
                             </div>

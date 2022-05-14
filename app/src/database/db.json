@@ -5,6 +5,12 @@
       "senha": "124edu",
       "email": "eduardo@gmail.com",
       "id": 1
+    },
+    {
+      "nome": "Eduardo Maeda de Oliveira Araujo",
+      "senha": "1234",
+      "email": "maeda_oliveira@hotmail.com",
+      "id": 2
     }
   ]
 }

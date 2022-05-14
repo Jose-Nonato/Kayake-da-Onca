@@ -5,6 +5,10 @@ import { Container } from "./style";
 import boatBackground from './assets/boat-background.jpg'
 
 function Historic(){
+
+    function goBack(){
+        window.location.href="/dashboard"
+    }
     return(
         <Container>
             <div className="boxOverall">
@@ -12,9 +16,9 @@ function Historic(){
                 <section>
                     <div className="box">
                         <div className="historic__menu">
-                            <FaArrowAltCircleLeft className="iconHome" size={'30px'}/>
+                            <FaArrowAltCircleLeft onClick={goBack} className="iconHome" size={'30px'}/>
                             <h1>Histórico de compras</h1>
-                            <FaHome className="iconHome" size={'30px'}/>
+                            <FaHome onClick={goBack} className="iconHome" size={'30px'}/>
                         </div>
                         
 
