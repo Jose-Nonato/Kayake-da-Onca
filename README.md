@@ -4,7 +4,7 @@
 
 <ul align="center">
   <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
-  <img src="https://img.shields.io/static/v1?label=firebase&message=banco de dados&color=orange&style=for-the-badge&logo=FIREBASE"/>
+  <img src="https://img.shields.io/static/v1?label=JSON&message=banco de dados&color=orange&style=for-the-badge&logo=JSON"/>
   <img src="https://img.shields.io/static/v1?label=figma&message=design&color=red&style=for-the-badge&logo=FIGMA"/>
   <img src="https://img.shields.io/static/v1?label=javascript&message=backend&color=yellow&style=for-the-badge&logo=JAVASCRIPT"/>
 </ul>
