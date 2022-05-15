@@ -1,5 +1,3 @@
-import './style'
-
 function CardHowGo(props){
     return(
         <div className="card__how__go">
@@ -9,13 +7,11 @@ function CardHowGo(props){
         </div>
         
         <div className='infoBtn'>   
-            <span>
-            i
-            </span>
+            <button onClick={props.abrir}>+</button>
         </div>
         <div className='content'>
             <div className='infoText'>
-                <h3>Kayake</h3>
+                <h3>{props.title}</h3>
                 <p>
                     Donec commodo, lacus ut rutrum aliquam, 
                     nibh elit rutrum risus, finibus venenatis tellus 

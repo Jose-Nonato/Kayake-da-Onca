@@ -84,12 +84,18 @@ export const Container= styled.div`
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        background: #333;
+        /* background: #333; */
 
-        span{
+        button{
+            background-color: #333;
+            border: none;
             font-size: 1rem;
-            font-weight: bold;
-            color: white;
+            color: #fff;
+            padding: 10px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50px;
+            cursor: pointer;
         }
   }
 
@@ -147,4 +153,44 @@ export const Container= styled.div`
             margin-top: 2rem;
         }
   }
+`;
+
+export const Card = styled.div`
+    background-color: #fff;
+    width: 40%;
+    padding: 15px;
+    box-shadow: -5px 7px 10px -7px rgba(0,0,0,0.75);
+
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    border-radius: 10px;
+
+    h1 {
+        padding: 10px;
+    }
+
+    p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    img {
+        padding: 10px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+    }
+
+    .input {
+        width: 70%;
+        margin: 10px;
+    }
+
+    Button {
+        width: 30%;
+    }
 `;
