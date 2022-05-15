@@ -26,8 +26,8 @@ function About() {
     const handleOpenCad = () => setOpenCad(true);
     const handleCloseCad = () => setOpenCad(false);
 
-    let jsonData = clientService.listaClientes()
-
+    let jsonData = clientService.listaClientes('user')
+    
 
     const [name, setName] = useState("")
     const [email, setEmail] = useState("") 

@@ -1,5 +1,5 @@
-const listaClientes = () =>{
-    return fetch(`http://localhost:4000/user`)
+const listaClientes = (type) =>{
+    return fetch(`http://localhost:4000/${type}`)
     .then(resposta =>{
         if(resposta.ok){
             return resposta.json()
@@ -30,7 +30,40 @@ const criaCliente = (nome, senha, email) =>{
     })
 }
 
-export const clientService ={
+const removeCliente = (id) =>{
+    return fetch(`http://localhost:4000/cart/${id}`, {
+        method: 'DELETE'    
+    }).then(resposta =>{
+        if(!resposta.ok){
+            throw new Error("Não foi possível listar os clientes")
+        }
+    })
+}
+
+const adicionarItem = (itemNome, preco) =>{
+    return fetch(`http://localhost:4000/cart`,{
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            title: itemNome,
+            preco: preco
+
+        })
+    })
+    .then(resposta =>{
+        if(resposta.ok){
+            return resposta.body
+        }
+        throw new Error("Não foi possível criar o clientes")
+        
+    })
+}
+    
+export const clientService = {
     criaCliente,
-    listaClientes
+    listaClientes,
+    removeCliente,
+    adicionarItem
 }

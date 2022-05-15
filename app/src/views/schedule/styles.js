@@ -8,6 +8,9 @@ export const Container= styled.div`
     h1{
         margin-left: 10%;
     }
+    .mg-5{
+        margin-top: 1rem;
+    }
     .agengaCard{
         margin: 0 auto;
         width: 1080px;
@@ -25,6 +28,53 @@ export const Container= styled.div`
         .chooseAct{
             color: #fff;
             margin-top: 2rem;
+        }
+        .date{
+            padding: 5px 16px;
+            margin-left: 1rem;
+            border-radius: 20px;
+            border:0;
+        }
+        .btnBuy{
+            padding: 8px 16px;
+            border:0;
+            margin-top: 1rem;
+            font-weight: bold;
+            border-radius: 20px;
+            letter-spacing:2px;
+            color: #fff;
+            background: #333;
+            cursor: pointer;
+        }
+        .tableItems{
+            
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+
+            .item{
+                margin-left: 2rem;
+                padding: 0px 16px;
+                border-right: 2px solid #333;
+            }
+            .btnRemove{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background: crimson;
+                font-size: 1.5rem;
+                font-weight: 500;
+                background:none;
+                border: 0;
+                width: 36px;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                border-radius: 50%;
+                cursor:pointer;
+                background: #db143c;
+            }
         }
     }
    
@@ -84,7 +134,6 @@ export const Container= styled.div`
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        /* background: #333; */
 
         button{
             background-color: #333;
@@ -96,6 +145,7 @@ export const Container= styled.div`
             height: 36px;
             border-radius: 50px;
             cursor: pointer;
+            z-index: 100;
         }
   }
 

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 import barco from './assets/barco.png'
 import kayake from './assets/Kayke.png'
@@ -17,9 +17,35 @@ import Footer from "../../components/footer/footer";
 
 import Modal from '@material-ui/core/Modal';
 import Grid from '@material-ui/core/Grid';
+import AgendaCart from "../../components/agendaCartLine/AgendaCart";
+import { clientService } from "../../services/client-serice";
 
 function Schedule() {
+    let jsonData = clientService.listaClientes('cart')
+    let jsonTotal = clientService.listaClientes('total')
 
+
+    function yogaDetail(){
+        clientService.adicionarItem("Yoga Ecológico", 70.00)
+        jsonTotal.total += 70.00
+        
+        window.location.reload()
+    }
+    function natacaoDetail(){
+        clientService.adicionarItem("Natação", 30.00)
+        jsonTotal.then(response=>{
+            response.total += 30.00
+        })
+        window.location.reload()
+    }
+    function trilhaDetail(){
+        clientService.adicionarItem("Trilha Ecológica", 50.00)
+        jsonTotal.then(response=>{
+            response.total += 50.00
+        })
+
+        window.location.reload()
+    }
     const [openIn, setOpenIn] = useState(false);
     const handleOpenIn = () => setOpenIn(true);
     const handleCloseIn = () => setOpenIn(false);
@@ -28,6 +54,13 @@ function Schedule() {
     const handleOpenInTwo = () => setOpenInTwo(true);
     const handleCloseInTwo = () => setOpenInTwo(false);
 
+    const [cart, setCart] = useState([])
+    useEffect(()=>{
+        jsonData.then(response=>{
+            setCart(response)
+            console.log(response)
+        })
+    },[])
     return(
         <Container>
 
@@ -76,9 +109,30 @@ function Schedule() {
                             <p>Escolha suas atividades abaixo</p>
                         </div>
 
-                        <div className="shopCart">
-                            <div className="shopCard__title"></div>
-                        </div>
+                        {
+                            cart.map(item=>{
+                                return(
+                                    <div className="mg-5">
+                                        <AgendaCart
+                                            removeFunc = {function(){
+                                                clientService.removeCliente(item.id)
+                                                jsonTotal.then(response=>{
+                                                    response.total -= item.preco
+                                                })
+
+                                                window.location.reload()
+                                            }}
+                                            key={item.id}
+                                            title={item.title}
+                                            price={"R$"+item.preco}
+                                            />
+                                        
+                                    </div>
+                                )
+                            })
+                        }
+                        <button className="btnBuy">Comprar</button>
+                        <input className="date" type="date"/>
                     </div>
 
                     <h1 className="title">Como Ir?</h1>   
@@ -100,7 +154,7 @@ function Schedule() {
 
                             <div className="btn">
                                 <div className="btn-func">
-                                    <button>+</button> 
+                                    <button onClick={yogaDetail}>+</button> 
                                     <span>Adicionar</span>
                                 </div>
                             </div>
@@ -115,7 +169,7 @@ function Schedule() {
 
                             <div className="btn">
                                 <div className="btn-func">
-                                    <button>+</button> 
+                                    <button onClick={trilhaDetail}>+</button> 
                                     <span>Adicionar</span>
                                 </div>
                             </div>
@@ -130,7 +184,7 @@ function Schedule() {
 
                             <div className="btn">
                                 <div className="btn-func">
-                                    <button>+</button> 
+                                    <button onClick={natacaoDetail}>+</button> 
                                     <span>Adicionar</span>
                                 </div>
                             </div>
