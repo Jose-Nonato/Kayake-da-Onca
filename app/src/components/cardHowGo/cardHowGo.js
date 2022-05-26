@@ -13,10 +13,7 @@ function CardHowGo(props){
             <div className='infoText'>
                 <h3>{props.title}</h3>
                 <p>
-                    Donec commodo, lacus ut rutrum aliquam, 
-                    nibh elit rutrum risus, finibus venenatis tellus 
-                    sapien at quam. Donec rhoncus turpis massa, 
-                    quis pellentesque turpis vestibulum in. 
+                Voce praticante de kayak, canoagem ou interessado em esportes ao ar livre, venha desfrutar da bela paisagem natural , enquanto realiza atividades fisicas, podendo  programar seus trajetos de maneira rapida e pratica
                 </p>
             </div>
         </div>

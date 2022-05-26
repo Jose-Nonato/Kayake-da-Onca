@@ -19,14 +19,9 @@ function Dashboard () {
                 <div className="one">
                     <h1>Fonte de Saúde</h1>
                     <div className="one-two">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel sagittis tellus. Pellentesque ut 
-auctor felis, sit amet porta orci. Vivamus sed quam accumsan, auctor elit et, facilisis risus. Sed 
-interdum lacus et ultrices mollis. Fusce laoreet neque id velit efficitur, ac lobortis erat ultrices. 
-Vestibulum at mauris auctor, tincidunt sapien eu, sodales felis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel sagittis tellus. Pellentesque ut 
-auctor felis, sit amet porta orci. Vivamus sed quam accumsan, auctor elit et, facilisis risus. Sed 
-interdum lacus et ultrices mollis. Fusce laoreet neque id velit efficitur, ac lobortis erat ultrices. 
-Vestibulum at mauris auctor, tincidunt sapien eu, sodales felis.</p>
+                        <p>A prática de canoagem, remar em uma canoa ou caiaque, vai além da prática de atividade física por si só. Além de ser uma atividade aeróbica,(envolve um alto gasto calórico, média de 600 por hora) pode aliar-se ou substituir a academia, fortalecendo boa parte dos músculos e ainda promove uma ótima integração à natureza, aliviando o estresse.</p>
+                        <p>Durante as remadas, o tronco permanece em movimento o tempo todo, enquanto a parte inferior mantém o equilíbrio, se movimentando também. Desta forma você trabalha as costas, que são muito solicitadas; o abdome, que, juntamente com os joelhos, ajudam a elevar ou afundar a proa ou a popa do caiaque; os braços, que exercem uma força propulsora, auxiliados pelos ombros, as coxas e pernas, que realizam movimentos de flexão e extensão.
+</p>
                     </div>
                 </div>
                 <div className="two">

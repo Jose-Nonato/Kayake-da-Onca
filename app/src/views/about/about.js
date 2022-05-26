@@ -193,11 +193,8 @@ function About() {
                 <section className='start' id='start'>
                     <div className='text'>
                         <h1>Por que praticar remo ?</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nibh est, faucibus sollicitudin tortor a, fringilla 
-rutrum risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasel-
-us lacus odio, commodo eu sapien nec, vehicula tempus nisi. Cras in augue vel tortor egestas efficitur sed vi-
-tae nulla. Etiam vitae blandit turpis. Praesent eget purus ac nibh aliquam ultrices. Etiam tortor velit, sodales
- elementum laoreet id, dapibus et enim. Duis consequat quam mi, quis laoreet tellus luctus a.</p>
+                        <p>O remo é um dos esportes mais completos do mundo e tem baixo risco de lesões. Ele trabalha, além dos braços, pernas, glúteos, costas e abdome, e sua prática queima, aproximadamente, 600 calorias por hora. Pode ser praticado tanto ao ar livre quanto em ambientes fechados com a ajuda de um aparelho que simula a prática na água.Os treinos são bastante intensos e como movimentam vários grupos musculares, a regularidade melhora a postura e favorece a perda de gordura, o ganho de massa muscular e o desenvolvimento de resistência aeróbica. 
+</p>
                     </div>
                     <div className='img'>
                         <img src={imgBoat} alt="Imagem Barco"/>
@@ -208,30 +205,15 @@ tae nulla. Etiam vitae blandit turpis. Praesent eget purus ac nibh aliquam ultri
                     <div className='container'>
                         <div className='box1'>
                             <img src={howOne} alt="imagem 1"/>
-                            <p>Integer tempus nibh ac accumsan aliquet. 
-                                Aliquam erat volutpat. Vestibulum et tor-
-                                tor vel dolor consectetur placerat ac ultri-
-                                cies velit. Sed pulvinar rutrum augue, eu
-                                facilisis lorem
-                            </p>
+                            <h2>Cadastre-se</h2>
                         </div>
                         <div className='box2'>
                             <img src={howTwo} alt="imagem 1"/>
-                            <p>Integer tempus nibh ac accumsan aliquet. 
-                                Aliquam erat volutpat. Vestibulum et tor-
-                                tor vel dolor consectetur placerat ac ultri-
-                                cies velit. Sed pulvinar rutrum augue, eu
-                                facilisis lorem
-                            </p>
+                            <h2>Escolha suas atividades</h2>
                         </div>
                         <div className='box3'>
                             <img src={howThree} alt="imagem 1"/>
-                            <p>Integer tempus nibh ac accumsan aliquet. 
-                                Aliquam erat volutpat. Vestibulum et tor-
-                                tor vel dolor consectetur placerat ac ultri-
-                                cies velit. Sed pulvinar rutrum augue, eu
-                                facilisis lorem
-                            </p>
+                            <h2>Aroveite</h2>
                         </div>
                     </div>
                 </section>
@@ -242,23 +224,8 @@ tae nulla. Etiam vitae blandit turpis. Praesent eget purus ac nibh aliquam ultri
                             <img src={boat} alt="barco"/>
                         </div>
                         <div className='text'>
-                            <p>Integer tempus nibh ac accumsan aliquet. Aliquam erat volutpat. Vesti-
-    bulum et tortor vel dolor consectetur placerat ac ultricies velit. Sed pulvi-
-    nar rutrum augue, eu facilisis lorem. Nam quam velit, accumsan sit am-
-    et urna vitae, fermentum commodo quam. Curabitur sit amet porta orci,
-    eget facilisis mauris. Praesent vitae condimentum felis, id eleifend ur-
-    na. Morbi euismod interdum metus, faucibus gravida mauris rhoncus eu
-    . Vestibulum purus ante, blandit a dui vitae, vestibulum maximus leo. 
-    Praesent scelerisque arcu a gravida ultrices. Sed egestas porttitor lorem,
-    semper faucibus lorem finibus in. Integer tempus nibh ac accumsan aliquet. Aliquam erat volutpat. Vesti-
-    bulum et tortor vel dolor consectetur placerat ac ultricies velit. Sed pulvi-
-    nar rutrum augue, eu facilisis lorem. Nam quam velit, accumsan sit am-
-    et urna vitae, fermentum commodo quam. Curabitur sit amet porta orci,
-    eget facilisis mauris. Praesent vitae condimentum felis, id eleifend ur-
-    na. Morbi euismod interdum metus, faucibus gravida mauris rhoncus eu
-    . Vestibulum purus ante, blandit a dui vitae, vestibulum maximus leo. 
-    Praesent scelerisque arcu a gravida ultrices. Sed egestas porttitor lorem,
-    semper faucibus lorem finibus in. </p>
+                            <p>Somos um grupo de alunos do curso de ciencia da computação do centro universitario do Pará. Visando o melhor desenvolvimento de localidades ribeirinhas amazonicas, desenvolvemos uma plataforma que visa atrair turistas do BRasil e de fora para regiões pouco exploradas pelo ecoturismo mas com potencial imenso, nesse caso utilizamos como referencia a Ilha das Onças, 
+                                a qual possui a comunidade Usina Vitória, que além de possuir sua beleza natural oferece diversas atrações e pontos turisticos, como a Casa do Celso.</p>
                         </div>
                     </div>
                 </section>

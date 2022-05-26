@@ -88,8 +88,9 @@ export const Container = styled.div`
                         height: 120px;
                         padding: 0px 0px 0px 100px;
                     }
-                    p {
-                        text-align: justify;
+                    h2 {
+                        text-align: center;
+                        padding: 0px 0px 0px 90px;
                     }
                 }
 
@@ -99,10 +100,11 @@ export const Container = styled.div`
                     img {
                         width: 120px;
                         height: 120px;
-                        padding: 0px 0px 0px 100px;
+                        padding: 0px 0px 0px 125px;
                     }
-                    p {
-                        text-align: justify;
+                    h2 {
+                        text-align: center;
+                        padding: 0px 0px 0px 55px;
                     }
                 }
 
@@ -114,8 +116,9 @@ export const Container = styled.div`
                         height: 120px;
                         padding: 0px 0px 0px 100px;
                     }
-                    p {
-                        text-align: justify;
+                    h2 {
+                        text-align: center;
+                        padding: 0px 0px 0px 100px;
                     }
                 }
             }

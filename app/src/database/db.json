@@ -17,23 +17,24 @@
       "senha": "1234567ola",
       "email": "edu@gmail.com",
       "id": 3
+    },
+    {
+      "nome": "José Junior",
+      "senha": "123jose",
+      "email": "nonigth@gmail.com",
+      "id": 4
     }
   ],
   "cart": [
     {
-      "title": "Yoga Ecológico",
-      "preco": 70,
+      "title": "Natação",
+      "preco": 30,
       "id": 1
     },
     {
       "title": "Trilha Ecológica",
       "preco": 50,
       "id": 2
-    },
-    {
-      "title": "Natação",
-      "preco": 30,
-      "id": 3
     }
   ],
   "total": [
