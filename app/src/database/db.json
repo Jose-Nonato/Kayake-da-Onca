@@ -1,42 +1,31 @@
 {
   "user": [
     {
-      "nome": "Eduardo",
-      "senha": "124edu",
-      "email": "eduardo@gmail.com",
+      "nome": "herminio",
+      "senha": "12345",
+      "email": "netinhobisneto@gmail.com",
       "id": 1
     },
     {
-      "nome": "Eduardo Maeda de Oliveira Araujo",
-      "senha": "1234",
-      "email": "maeda_oliveira@hotmail.com",
+      "nome": "Java",
+      "senha": "123",
+      "email": "beijallote@gmail.com",
       "id": 2
     },
     {
-      "nome": "edu",
-      "senha": "1234567ola",
-      "email": "edu@gmail.com",
+      "nome": "rennato",
+      "senha": "123",
+      "email": "repitriano12@gmail.com",
       "id": 3
     },
     {
-      "nome": "José Junior",
-      "senha": "123jose",
-      "email": "nonigth@gmail.com",
+      "nome": "joao vitor",
+      "senha": "jv1681789189",
+      "email": "juvitu14@gmail.com",
       "id": 4
     }
   ],
-  "cart": [
-    {
-      "title": "Natação",
-      "preco": 30,
-      "id": 1
-    },
-    {
-      "title": "Trilha Ecológica",
-      "preco": 50,
-      "id": 2
-    }
-  ],
+  "cart": [],
   "total": [
     {
       "total": 0,
